@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Positioning</title>
+	<style>
+	
+		.box{
+			width: 120px;
+			height: 120px;
+		}
+        .mbox{
+			width: 30px;
+			height: 30px;
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+		}
+		
+		#first{
+			background: red;
+		}
+		#second{
+			background: blue;
+            position: relative;
+            
+		}
+		#third{
+			background: green;
+		    position: fixed;
+            top: 0;
+            right: 0;
+        }
+		 
+	</style>
+</head>
+<body>	
+	
+	<div class="box" id="first">box 1</div>
+	<div class="box" id="second">box 2>
+        <div class="mbox"></div></div>
+	<div class="box" id="third">box 3</div>	
+	
+	
+</body>
+</html>

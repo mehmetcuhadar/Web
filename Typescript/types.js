@@ -1,0 +1,23 @@
+var a = 5;
+var b = "a";
+var c = true;
+var d;
+var e = [1, 2, 3];
+var f = [1, 2, 3];
+var g = [1, "a", true];
+var h = ["a", 2, false];
+var credyPaymeent = 0;
+var havalePayment = 1;
+var eftPayment = 2;
+var Payment;
+(function (Payment) {
+    Payment[Payment["credi"] = 0] = "credi";
+    Payment[Payment["havale"] = 1] = "havale";
+    Payment[Payment["eft"] = 3] = "eft";
+    Payment[Payment["kap\u0131da"] = 2] = "kap\u0131da";
+})(Payment || (Payment = {}));
+;
+var me = Payment.credi;
+var men = Payment.havale;
+var mes = Payment.eft;
+var mek = Payment.kapıda;
